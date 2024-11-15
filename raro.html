@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Alex, desarrollador web creativo.">
+    <title>Portafolio Alex</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="raro.css">
+    <link rel="icon" href="pngimg.com - book_PNG50999.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Página de Inicio (Header) -->
+    <header id="header" class="banner">
+        <div class="banner-content">
+            <img src="alex-logo-832-10.png" alt="Logo de Alex" class="logo" width="400px">
+            <h2>Alexander Timarevskyy</h2>
+            <nav>
+                <a href="#about" class="nav-link">Sobre mí</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Aviso de Cookies -->
+    <div id="cookieNotice" class="cookie-banner">
+        <p>Este sitio utiliza cookies para mejorar tu experiencia. <button onclick="hideCookieNotice()">Aceptar</button></p>
+    </div>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="section about">
+        <div class="about-content">
+            <!-- Imagen a la izquierda -->
+            <div class="about-image">
+                <img src="Multimedia.jpg" alt="Imagen de Alex" width="300px">
+            </div>
+            
+            <!-- Texto de la bio -->
+            <div class="bio-card">
+                <h2>Sobre mí</h2>
+                <p>"Hola, soy Alex, un desarrollador web con una profunda pasión por crear soluciones digitales innovadoras y funcionales. Con experiencia en tecnologías como HTML, CSS y JavaScript, me especializo en construir sitios web y aplicaciones intuitivas que brindan una experiencia fluida y atractiva para los usuarios. Mi objetivo es transformar ideas en productos digitales excepcionales que no solo sean estéticamente agradables, sino también altamente funcionales."</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Galería de Proyectos -->
+    <section id="projects" class="section projects">
+        <h2>Mis Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="dhcp.PNG" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Hacer la red del colegio sorolla.</p>
+            </div>
+            <div class="project">
+                <img src="pagina wweb.PNG"Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Creacion de una pagina web para la empresa de mi padre.</p>
+            </div>
+            <div class="project">
+                <img src="seg.PNG" alt="Proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Crear sistemas de seguridad</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="section skills">
+        <h2>Mis Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Visual Studio</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" style="width: 20%; background-color: #66bb6a;"></div> <!-- Verde -->
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Packet Tracer</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" style="width: 30%; background-color: #ffeb3b;"></div> <!-- Amarillo -->
+                </div>
+            </div>
+            <div class="skill">
+                <h3>VirtualBox</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" style="width: 50%; background-color: #ff7043;"></div> <!-- Naranja -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section contact">
+        <h2>“¿Quieres contratarme? ¡Hablemos!</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar mensaje">
+            </div>
+        </form>
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>© 2024 <span class="brand-name">Alex</span>. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#about" class="footer-link">Sobre mí</a>
+                    <a href="#projects" class="footer-link">Proyectos</a>
+                    <a href="#contact" class="footer-link">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Desarrollado con ❤️ por Alex</p>
+            </div>
+        </footer>
+        
+        <script>
+            // Función para ocultar el aviso de cookies
+            function hideCookieNotice() {
+                document.getElementById("cookieNotice").style.display = "none";
+            }
+        
+            // Temporizador para ocultar el aviso de cookies después de 5 segundos
+            setTimeout(hideCookieNotice, 5000);
+        
+            // Mostrar un mensaje al hacer clic en el enlace del pie de página
+            document.querySelectorAll('.footer-link').forEach(link => {
+                link.addEventListener('click', function(event) {
+                    alert('¡Gracias por navegar por mi portafolio!');
+                });
+            });
+        </script>
+        
+</body>
+
+</html>

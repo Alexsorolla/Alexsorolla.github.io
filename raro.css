@@ -1,0 +1,870 @@
+/* Reseteo de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rosybrown;
+    color: #333;
+     
+    
+   
+
+      
+}
+
+/* Estilos Generales */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Header */
+#header {
+    background: url(kkkdd.gif) no-repeat center center fixed; /* Fondo GIF */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+nav {
+    position: fixed; /* Lo fija en la pantalla */
+    top: 0; /* Pegado al borde superior de la página */
+    left: 0; /* Alineado al borde izquierdo */
+    width: 100%; /* El nav ocupa todo el ancho de la página */
+    background-color: #0077b5; /* Color de fondo */
+    padding: 10px 0; /* Espaciado vertical dentro del nav */
+    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad */
+    display: flex; /* Usamos Flexbox para alinear los elementos */
+    justify-content: center; /* Centra el contenido (enlaces) horizontalmente */
+}
+
+nav .nav-links {
+    display: flex; /* Alinea los enlaces de forma horizontal */
+    gap: 20px; /* Espaciado entre los enlaces */
+}
+
+nav a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 0 15px; /* Espaciado horizontal entre los enlaces */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+nav a:hover {
+    color: #ffffff; /* Cambia el color de los enlaces al pasar el ratón */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo al pasar el ratón */
+}
+
+nav .nav-link {
+    margin: 0 15px; /* Márgenes para cada enlace */
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: auto;
+}
+
+/* Banner de Cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+/* Sección Sobre Mí */
+.section {
+    padding: 60px 20px;
+}
+
+.about .bio-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
+}
+
+/* Galería de Proyectos */
+.projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects .project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.projects .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Habilidades */
+.skills .skills-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skills .skill {
+    width: 30%;
+    text-align: center;
+}
+
+.skills .skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.skills .skill-bar {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Formulario de Contacto */
+.contact form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Sección sobre mí */
+#about {
+    padding: 50px;
+    background-color: #f9f9f9; /* Fondo claro para la sección */
+}
+
+.about-content {
+    display: flex;
+    justify-content: flex-start; /* Coloca los elementos alineados a la izquierda */
+    align-items: center; /* Centrado vertical de los elementos */
+    gap: 50px; /* Espacio entre la imagen y el texto */
+}
+
+.bio-card {
+    flex: 1;
+    max-width: 60%; /* Ajusta el tamaño de la tarjeta de bio */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Mueve el texto hacia la derecha */
+}
+
+.bio-card h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.bio-card p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* Cambia el color al pasar el ratón */
+    background-color: #0077b5;
+}
+
+/* Estilos para la imagen */
+.about-image img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto;
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    border-radius: 12px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra para la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto de hover sobre la imagen */
+.about-image img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+        gap: 20px; /* Espacio entre la imagen y el texto */
+    }
+
+    .bio-card {
+        max-width: 90%; /* Hace que la tarjeta ocupe un 90% del ancho en móviles */
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+    }
+
+    .about-image img {
+        width: 250px; /* Ajusta el tamaño de la imagen en móviles */
+    }
+}.projects {
+    padding: 50px 20px; /* Espaciado superior e inferior */
+    background-color: #f8f9fa; /* Fondo claro para la sección */
+    text-align: center; /* Centrar el texto */
+    color: #333; /* Color de texto */
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700; /* Resaltar el título */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0077b5; /* Color de texto del título */
+}
+
+/* Estilos de la cuadrícula de proyectos */
+.projects-grid {
+    display: grid; /* Usamos CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Filas y columnas automáticas */
+    gap: 30px; /* Espacio entre las tarjetas de proyectos */
+    justify-items: center; /* Centra cada proyecto dentro de la celda */
+}
+
+/* Estilos de cada proyecto */
+.project {
+    background-color: white; /* Fondo blanco para cada proyecto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves */
+    width: 100%; /* Hace que el contenedor del proyecto ocupe todo el espacio disponible */
+    max-width: 350px; /* Limita el ancho máximo */
+}
+
+.project img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del proyecto */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease-in-out; /* Efecto al hacer hover sobre la imagen */
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #0077b5; /* Color del título */
+}
+
+.project p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #666; /* Color gris claro para el texto */
+}
+
+/* Efecto al pasar el ratón sobre el proyecto */
+.project:hover {
+    transform: translateY(-10px); /* Levanta el proyecto al pasar el ratón */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); /* Sombra más profunda */
+}
+
+/* Efecto al pasar el ratón sobre la imagen */
+.project img:hover {
+    transform: scale(1.05); /* Hace que la imagen se agrande ligeramente */
+}
+.skills {
+    padding: 50px 20px; /* Espaciado de la sección */
+    background-color: #f0f4f8; /* Fondo suave */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrado de todo el texto */
+}
+
+/* Título de la sección */
+.skills h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0077b5; /* Color de texto */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Contenedor de las habilidades */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Establece las columnas dinámicas */
+    gap: 40px; /* Espacio entre las tarjetas */
+    justify-items: center; /* Centra cada habilidad */
+}
+
+/* Cada habilidad */
+.skill {
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    width: 100%; /* Ocupa todo el espacio disponible */
+    max-width: 350px; /* Limita el ancho máximo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Título de cada habilidad */
+.skill h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0077b5;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de la barra de habilidad */
+.skill-bar-container {
+    background-color: #e0e0e0; /* Fondo gris claro */
+    border-radius: 5px;
+    height: 15px; /* Altura de la barra */
+    overflow: hidden; /* Asegura que la barra no se desborde */
+    position: relative;
+}
+
+/* La barra de habilidad */
+.skill-bar {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 1s ease-in-out; /* Animación de la barra */
+}
+
+/* Efecto al pasar el ratón sobre la habilidad */
+.skill:hover {
+    transform: translateY(-10px); /* Eleva la habilidad al pasar el ratón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+/* Añadimos una animación que se activa al hacer scroll */
+@keyframes loadBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: var(--skill-width); /* Usa el valor de la propiedad personalizada */
+    }
+}
+
+.skill-bar {
+    animation: loadBar 1s forwards; /* Aplicamos la animación */
+}
+
+/* Personalización de colores para cada barra */
+.skill:nth-child(1) .skill-bar {
+    background-color: #66bb6a; /* Verde para Visual Studio */
+}
+
+.skill:nth-child(2) .skill-bar {
+    background-color: #ffeb3b; /* Amarillo para Packet Tracer */
+}
+
+.skill:nth-child(3) .skill-bar {
+    background-color: #ff7043; /* Naranja para VirtualBox */
+}
+
+/* Transición para asegurar que la animación se vea bien */
+@media (min-width: 768px) {
+    .skill-bar {
+        animation-duration: 2s; /* Hacemos la animación un poco más lenta en pantallas más grandes */
+    }
+} .contact {
+    background-color: #f7f9fc; /* Fondo suave y claro */
+    padding: 50px 20px;
+    color: #333; /* Color de texto */
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 40px auto;
+    max-width: 900px; /* Limita el ancho máximo */
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0077b5; /* Color destacado */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo para los campos del formulario */
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Estilo para los campos de texto */
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Efecto de enfoque en los campos del formulario */
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #0077b5; /* Borde azul */
+    box-shadow: 0 0 10px rgba(0, 119, 181, 0.5); /* Sombra de enfoque */
+    outline: none; /* Elimina el borde predeterminado del navegador */
+}
+
+/* Estilo para el botón de envío */
+.form-group input[type="submit"] {
+    background-color: #0077b5; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Efecto hover para el botón de envío */
+.form-group input[type="submit"]:hover {
+    background-color: #005f8d; /* Azul oscuro */
+    transform: translateY(-3px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Efecto para el campo de mensaje */
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px 15px;
+    }
+
+    .contact h2 {
+        font-size: 2rem; /* Ajustar el tamaño del título */
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 0.95rem; /* Ajuste en el tamaño de la fuente */
+    }
+}
+#footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+    padding: 40px 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 2px solid #444; /* Línea sutil en la parte superior */
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo del contenedor principal */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la parte izquierda del pie de página */
+.footer-left p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ccc; /* Color suave para el texto */
+}
+
+/* Estilo para el nombre de la marca en el pie de página */
+.footer-left .brand-name {
+    font-weight: 700;
+    color: #ff9800; /* Color dorado para resaltar el nombre */
+}
+
+/* Estilo para la parte derecha del pie de página (enlaces) */
+.footer-right {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-link {
+    color: #ff9800; /* Color dorado */
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Efecto al pasar el ratón */
+}
+
+/* Efecto hover para los enlaces */
+.footer-link:hover {
+    color: #fff; /* Cambio de color al blanco */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Estilo de la sección inferior */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ccc; /* Color suave */
+    font-style: italic;
+}
+
+/* Añadimos media queries para el móvil */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-left p {
+        font-size: 0.9rem;
+    }
+
+    .footer-link {
+        font-size: 1rem;
+    }
+    /* Estilos para el Header con banner */
+.banner {
+    position: relative;
+    background-image: url('tu-imagen-de-fondo.jpg'); /* Aquí va tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Hace que el banner ocupe toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para mejorar la visibilidad del texto */
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto para mayor legibilidad */
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo para el logo en el banner */
+.logo {
+    width: 150px; /* Ajusta el tamaño de tu logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la navegación */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    border-radius: 25px;
+    padding: 10px 20px;
+    z-index: 10; /* Asegura que el menú esté siempre encima */
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #ff9800; /* Color de hover */
+}
+
+/* Estilo básico para el resto del contenido */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 60px 20px;
+}
+/* Estilos para el Header con banner */
+.banner {
+    position: relative;
+    background-image: url('background.jpg'); /* Aquí va tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Hace que el banner ocupe toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Contenido del Banner */
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para mejorar la visibilidad del texto */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 80%; /* Limita el ancho del contenido */
+}
+
+/* Estilo del Título */
+.banner h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto para mayor legibilidad */
+}
+
+/* Estilo del Subtítulo */
+.banner p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo para el logo en el banner */
+.logo {
+    width: 150px; /* Ajusta el tamaño de tu logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la navegación */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    border-radius: 25px;
+    padding: 10px 20px;
+    z-index: 10; /* Asegura que el menú esté siempre encima */
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #ff9800; /* Color de hover */
+}
+
+/* Estilo básico para el resto del contenido */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 60px 20px;
+}
+.banner {
+    position: relative;
+    background-image: url('background.jpg'); /* Aquí va tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Hace que el banner ocupe toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Contenido del Banner */
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para mejorar la visibilidad del texto */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 80%; /* Limita el ancho del contenido */
+}
+
+/* Estilo del Título */
+.banner h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto para mayor legibilidad */
+}
+
+/* Estilo del Subtítulo */
+.banner p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo para el logo en el banner */
+.logo {
+    width: 150px; /* Ajusta el tamaño de tu logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la navegación */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    border-radius: 25px;
+    padding: 10px 20px;
+    z-index: 10; /* Asegura que el menú esté siempre encima */
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #ff9800; /* Color de hover */
+}
+
+/* Estilo básico para el resto del contenido */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 60px 20px;
+}
+#header.banner {
+    display: flex;                 /* Usa flexbox para centrar contenido */
+    justify-content: center;       /* Centra horizontalmente */
+    align-items: center;           /* Centra verticalmente */
+    height: 100vh;                 /* El banner ocupará toda la altura de la ventana */
+    background-color: #f4f4f4;     /* Color de fondo opcional */
+    text-align: center;            /* Centra el texto */
+    padding: 0 20px;               /* Un pequeño relleno lateral */
+}
+
+.banner-content {
+    max-width: 1200px;             /* Limita el ancho máximo del contenido */
+    width: 100%;                   /* Asegura que ocupe el 100% del espacio disponible */
+    padding: 20px;                 /* Añade algo de espacio alrededor */
+}
+
+.banner-content .logo {
+    width: 50%;                    /* Ajusta el tamaño de la imagen */
+    max-width: 600px;              /* Limita el tamaño máximo de la imagen */
+    margin: 0 auto;                /* Centra la imagen */
+    display: block;
+}
+
+
+} 
+
