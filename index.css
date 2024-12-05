@@ -1,0 +1,261 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo global */
+body {
+    background-color: #f4f7fa;
+    color: #333;
+    padding: 50px 10px;
+    font-size: 16px;
+}
+
+/* Contenedor principal */
+.container {
+    width: 85%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #1abc9c;
+}
+
+/* Títulos principales */
+h1 {
+    font-size: 3.5em;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 1.6em;
+    color: #34495e;
+    margin: 20px 0;
+    font-weight: 600;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 5px;
+}
+
+/* Subsubtítulos (secciones) */
+h3 {
+    font-size: 1.4em;
+    color: #16a085;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* Sección general */
+.section {
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #f9fafb;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto hover en las secciones */
+.section:hover {
+    background-color: #ecf6f1;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+/* Listas */
+ul.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.list li {
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+/* Estilo de listas con iconos */
+ul.list li::before {
+    content: "•";
+    color: #16a085;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+/* Títulos dentro de las listas */
+ul.list li strong {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #16a085;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+/* Separadores entre secciones */
+hr {
+    border: 1px solid #eee;
+    margin: 25px 0;
+}
+
+/* Enlaces de contacto */
+ul.list li span {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/* Estilo para los cursos */
+ul.list li .course-title {
+    font-weight: 700;
+    color: #2980b9;
+}
+
+ul.list li .course-center {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Estilo para las soft skills */
+ul.list li .soft-skill {
+    font-style: italic;
+    color: #95a5a6;
+}
+
+/* Estilo para las habilidades */
+ul.list li .skills {
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+/* Diseño de la cabecera */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Foto de perfil (si tienes) */
+.profile-pic {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/* Información personal */
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.personal-info div {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+.personal-info span {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.personal-info p {
+    font-size: 1.1em;
+    color: #34495e;
+}
+
+/* Color personalizado para las secciones de contacto y habilidades */
+.contact-info,
+.skills-info {
+    background-color: #f0f9f6;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Diseño de las fechas */
+.date-range {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Estilo de los logros o premios */
+.awards {
+    background-color: #eafaf7;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-left: 5px solid #1abc9c;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.awards li {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.awards li span {
+    color: #e74c3c;
+}
+
+/* Estilo de los cursos */
+ul.courses {
+    background-color: #ecf6f1;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+ul.courses li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    color: #34495e;
+}
+
+ul.courses li span {
+    font-weight: 700;
+    color: #2980b9;
+}
+
+/* Estilo para el código QR de LinkedIn */
+.linkedin-qr {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.linkedin-qr img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+}
+
+.linkedin-qr img:hover {
+    transform: scale(1.1);
+}
+
